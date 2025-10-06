@@ -102,32 +102,34 @@ def main():
         
         if not eminem_songs:
             print(" Nenhuma música do Eminem encontrada no dataset")
-            print(" O dataset pode ser mais focado em música anterior a 2010")
             return
         
         # Analisar as músicas do Eminem
         print(f"\n Analisando {len(eminem_songs)} músicas do Eminem...\n")
         
+        # Para cada música do Eminem encontrada
         for i, song_data in enumerate(eminem_songs, 1):
             artist = song_data['artist']
             song_name = song_data['song']
             lyrics = song_data['lyrics']
             
+            # Mostra progresso: "1. Song Name → Positiva"
             print(f" {i:2d}. {song_name[:35]:35}", end=" ")
             
+            # Analisa o sentimento da letra
             sentiment = simulate_sentiment_analysis(lyrics)
-            sentiment_counts[sentiment] += 1
+            sentiment_counts[sentiment] += 1 #mostra o resultado
             
             print(f"→ {sentiment}")
             
-            # Pequena pausa para visualização
+            # pausa pra visualização 
             time.sleep(0.5)
                 
     except Exception as e:
         print(f" Erro: {e}")
         return
     
-    # Salvar resultados
+    # salva resultados
     with open('sentiment_eminem_results.txt', 'w', encoding='utf-8') as f:
         f.write("=" * 60 + "\n")
         f.write("      RESULTADOS - SENTIMENTOS DAS MÚSICAS DO EMINEM\n")
@@ -139,6 +141,7 @@ def main():
         f.write(" DISTRIBUIÇÃO DE SENTIMENTOS:\n")
         f.write("-" * 40 + "\n")
         
+        # escreve estatísticas
         total = sum(sentiment_counts.values())
         for sentiment in ["Positiva", "Neutra", "Negativa"]:
             count = sentiment_counts[sentiment]

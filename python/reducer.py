@@ -42,7 +42,7 @@ def main():
     # Salvar resultados finais
     print("Salvando resultados...")
     with open('total_word_counts.txt', 'w', encoding='utf-8') as f:
-        for word, count in sorted(word_counts.items(), key=lambda x: x[1], reverse=True)[:100]:
+        for word, count in sorted(word_counts.items(), key=lambda x: x[1], reverse=True)[:500]:
             f.write(f"{word}\t{count}\n")
     
     with open('total_artist_counts.txt', 'w', encoding='utf-8') as f:

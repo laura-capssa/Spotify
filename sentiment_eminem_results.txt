@@ -2,16 +2,16 @@
       RESULTADOS - SENTIMENTOS DAS MÚSICAS DO EMINEM
 ============================================================
 
-🎤 ARTISTA: Eminem
-📊 Total de músicas analisadas: 70
+ ARTISTA: Eminem
+ Total de músicas analisadas: 70
 
-📈 DISTRIBUIÇÃO DE SENTIMENTOS:
+ DISTRIBUIÇÃO DE SENTIMENTOS:
 ----------------------------------------
-🎵 Positiva: 15 músicas ( 21.4%)
-🎵 Neutra: 20 músicas ( 28.6%)
-🎵 Negativa: 35 músicas ( 50.0%)
+ Positiva: 15 músicas ( 21.4%)
+ Neutra: 20 músicas ( 28.6%)
+ Negativa: 35 músicas ( 50.0%)
 
-🎭 LISTA DE MÚSICAS ANALISADAS:
+ LISTA DE MÚSICAS ANALISADAS:
 ----------------------------------------
  1. 25 to Life → Positiva
  2. 3 A.M. → Negativa
@@ -84,9 +84,9 @@
 69. My Dad's Gone Crazy → Negativa
 70. My Fault → Negativa
 
-💡 ANÁLISE:
+ ANÁLISE:
    As músicas do Eminem frequentemente exploram temas complexos
    como struggles pessoais, crítica social e auto-reflexão.
    Esta análise por palavras-chave captura tendências gerais.
 
-📅 Data: 06/10/2025 17:47
+ Data: 06/10/2025 20:49
