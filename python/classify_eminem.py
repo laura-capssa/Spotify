@@ -7,14 +7,14 @@ import os
 
 def simulate_sentiment_analysis(text):
     """
-    Analisa sentimentos baseada em palavras-chave - versão para rap/hiphop
+    Analisa sentimentos baseada em palavras-chave
     """
     if not text:
         return "Neutra"
     
     text_lower = text.lower()
     
-    # Palavras positivas adaptadas para rap
+    # Palavras positivas 
     positive_words = [
         'love', 'happy', 'beautiful', 'success', 'win', 'victory', 
         'strong', 'power', 'money', 'rich', 'dream', 'hope', 'future',
@@ -22,7 +22,7 @@ def simulate_sentiment_analysis(text):
         'bless', 'peace', 'family', 'loyal', 'respect', 'honor'
     ]
     
-    # Palavras negativas adaptadas para rap
+    # Palavras negativas 
     negative_words = [
         'hate', 'kill', 'death', 'murder', 'war', 'fight', 'violence',
         'pain', 'hurt', 'suffer', 'broken', 'lost', 'alone', 'dark',
@@ -31,7 +31,7 @@ def simulate_sentiment_analysis(text):
         'anger', 'mad', 'rage', 'revenge', 'jail', 'prison', 'crime'
     ]
     
-    # Palavras neutras/comuns em rap que não indicam sentimento forte
+    # Palavras neutras que não indicam sentimento forte
     neutral_context = [
         'rap', 'hiphop', 'mic', 'flow', 'rhyme', 'beat', 'track',
         'album', 'song', 'music', 'verse', 'hook', 'chorus'
@@ -58,25 +58,23 @@ def simulate_sentiment_analysis(text):
         return "Neutra"
 
 def main():
-    print("🎵" * 20)
-    print("  CLASSIFICADOR DE SENTIMENTOS - EMINEM")
-    print("🎵" * 20)
-    print("💡 Analisando APENAS músicas do Eminem")
+    print("  CLASSIFICADOR DE SENTIMENTOS")
+    print()
+    print(" Analisando APENAS músicas do Eminem")
     print()
     
     if len(sys.argv) != 2:
         print("Uso: python3 classify_eminem.py spotify_millsongdata.csv")
-        print("💡 Execute da pasta principal do projeto")
         sys.exit(1)
     
     csv_file = sys.argv[1]
     
     if not os.path.exists(csv_file):
-        print(f"❌ Arquivo não encontrado: {csv_file}")
+        print(f" Arquivo não encontrado: {csv_file}")
         sys.exit(1)
     
-    print(f"📁 Analisando: {csv_file}")
-    print("🔍 Procurando músicas do Eminem...\n")
+    print(f" Analisando: {csv_file}")
+    print(" Procurando músicas do Eminem...\n")
     
     sentiment_counts = Counter()
     eminem_songs = []
@@ -100,22 +98,22 @@ def main():
                                 'lyrics': lyrics
                             })
         
-        print(f"✅ Encontradas {len(eminem_songs)} músicas do Eminem")
+        print(f" Encontradas {len(eminem_songs)} músicas do Eminem")
         
         if not eminem_songs:
-            print("❌ Nenhuma música do Eminem encontrada no dataset")
-            print("💡 O dataset pode ser mais focado em música anterior a 2010")
+            print(" Nenhuma música do Eminem encontrada no dataset")
+            print(" O dataset pode ser mais focado em música anterior a 2010")
             return
         
         # Analisar as músicas do Eminem
-        print(f"\n🎤 Analisando {len(eminem_songs)} músicas do Eminem...\n")
+        print(f"\n Analisando {len(eminem_songs)} músicas do Eminem...\n")
         
         for i, song_data in enumerate(eminem_songs, 1):
             artist = song_data['artist']
             song_name = song_data['song']
             lyrics = song_data['lyrics']
             
-            print(f"🎵 {i:2d}. {song_name[:35]:35}", end=" ")
+            print(f" {i:2d}. {song_name[:35]:35}", end=" ")
             
             sentiment = simulate_sentiment_analysis(lyrics)
             sentiment_counts[sentiment] += 1
@@ -126,7 +124,7 @@ def main():
             time.sleep(0.5)
                 
     except Exception as e:
-        print(f"❌ Erro: {e}")
+        print(f" Erro: {e}")
         return
     
     # Salvar resultados
@@ -135,46 +133,46 @@ def main():
         f.write("      RESULTADOS - SENTIMENTOS DAS MÚSICAS DO EMINEM\n")
         f.write("=" * 60 + "\n\n")
         
-        f.write("🎤 ARTISTA: Eminem\n")
-        f.write(f"📊 Total de músicas analisadas: {len(eminem_songs)}\n\n")
+        f.write(" ARTISTA: Eminem\n")
+        f.write(f" Total de músicas analisadas: {len(eminem_songs)}\n\n")
         
-        f.write("📈 DISTRIBUIÇÃO DE SENTIMENTOS:\n")
+        f.write(" DISTRIBUIÇÃO DE SENTIMENTOS:\n")
         f.write("-" * 40 + "\n")
         
         total = sum(sentiment_counts.values())
         for sentiment in ["Positiva", "Neutra", "Negativa"]:
             count = sentiment_counts[sentiment]
             percentage = (count / total) * 100 if total > 0 else 0
-            f.write(f"🎵 {sentiment}: {count:2d} músicas ({percentage:5.1f}%)\n")
+            f.write(f" {sentiment}: {count:2d} músicas ({percentage:5.1f}%)\n")
         
-        f.write(f"\n🎭 LISTA DE MÚSICAS ANALISADAS:\n")
+        f.write(f"\n LISTA DE MÚSICAS ANALISADAS:\n")
         f.write("-" * 40 + "\n")
         for i, song_data in enumerate(eminem_songs, 1):
             sentiment = simulate_sentiment_analysis(song_data['lyrics'])
             f.write(f"{i:2d}. {song_data['song']} → {sentiment}\n")
         
-        f.write(f"\n💡 ANÁLISE:\n")
+        f.write(f"\n ANÁLISE:\n")
         f.write("   As músicas do Eminem frequentemente exploram temas complexos\n")
         f.write("   como struggles pessoais, crítica social e auto-reflexão.\n")
         f.write("   Esta análise por palavras-chave captura tendências gerais.\n")
         
-        f.write(f"\n📅 Data: {time.strftime('%d/%m/%Y %H:%M')}\n")
+        f.write(f"\n Data: {time.strftime('%d/%m/%Y %H:%M')}\n")
     
     # Mostrar resultados
-    print("\n" + "✅" * 25)
+    print("\n" + "" * 25)
     print("      ANÁLISE DO EMINEM CONCLUÍDA!")
-    print("✅" * 25)
+    print("" * 25)
     
-    print(f"\n📊 RESULTADOS DAS {len(eminem_songs)} MÚSICAS:")
+    print(f"\n RESULTADOS DAS {len(eminem_songs)} MÚSICAS:")
     print("-" * 45)
     total = sum(sentiment_counts.values())
     for sentiment in ["Positiva", "Neutra", "Negativa"]:
         count = sentiment_counts[sentiment]
         percentage = (count / total) * 100
-        print(f"🎵 {sentiment}: {count:2d} músicas ({percentage:5.1f}%)")
+        print(f" {sentiment}: {count:2d} músicas ({percentage:5.1f}%)")
     
     # Análise interpretativa
-    print(f"\n💭 INTERPRETAÇÃO:")
+    print(f"\n INTERPRETAÇÃO:")
     if sentiment_counts['Negativa'] > sentiment_counts['Positiva']:
         print("   → Eminem tende a explorar temas mais intensos e dark")
     elif sentiment_counts['Positiva'] > sentiment_counts['Negativa']:
@@ -182,7 +180,7 @@ def main():
     else:
         print("   → Equilíbrio entre temas positivos e negativos")
     
-    print(f"\n💾 Resultados detalhados em: sentiment_eminem_results.txt")
+    print(f"\n Resultados detalhados em: sentiment_eminem_results.txt")
 
 if __name__ == "__main__":
     main()
