@@ -1,0 +1,92 @@
+============================================================
+      RESULTADOS - SENTIMENTOS DAS MÚSICAS DO EMINEM
+============================================================
+
+🎤 ARTISTA: Eminem
+📊 Total de músicas analisadas: 70
+
+📈 DISTRIBUIÇÃO DE SENTIMENTOS:
+----------------------------------------
+🎵 Positiva: 15 músicas ( 21.4%)
+🎵 Neutra: 20 músicas ( 28.6%)
+🎵 Negativa: 35 músicas ( 50.0%)
+
+🎭 LISTA DE MÚSICAS ANALISADAS:
+----------------------------------------
+ 1. 25 to Life → Positiva
+ 2. 3 A.M. → Negativa
+ 3. 3 Verses → Negativa
+ 4. Above The Law → Positiva
+ 5. Buffalo Bill → Negativa
+ 6. Business → Neutra
+ 7. Careful What You Wish For → Positiva
+ 8. Chemical Warfare → Neutra
+ 9. Cleanin' Out My Closet → Negativa
+10. Cocaine → Neutra
+11. Crack A Bottle → Neutra
+12. Drips → Positiva
+13. Elevator → Negativa
+14. Emulate → Negativa
+15. Farewell → Negativa
+16. Freestyle 2 → Positiva
+17. Gangsta - (Joe Beast) → Negativa
+18. Get Money → Positiva
+19. If I Had... → Neutra
+20. I'm Having A Relapse → Negativa
+21. Infinite → Neutra
+22. Invasion → Negativa
+23. Just Lose It → Neutra
+24. Medicine Ball → Negativa
+25. 8 Mile Freestyle Pt.Ii → Negativa
+26. 8 Mile Freestyle Pt.Iii Vs → Positiva
+27. Amityville → Neutra
+28. Backstabber → Negativa
+29. Bagpipes From Baghdad → Neutra
+30. Biterphobia → Negativa
+31. Bully → Negativa
+32. Crackers 'N Cheese → Negativa
+33. Crazy In Love → Negativa
+34. Dare To Dream → Positiva
+35. Despicable → Neutra
+36. Echo → Positiva
+37. Em Calls Paul (Skit) → Positiva
+38. Eminem Exclusive Freestyle → Neutra
+39. Eminem Part 1 → Positiva
+40. Evil Deeds → Negativa
+41. Eye Of The Tiger → Negativa
+42. Fack → Positiva
+43. Failed Destiny → Neutra
+44. Give Me The Ball → Positiva
+45. GOAT → Negativa
+46. Green And Gold → Negativa
+47. Guilty Conscience → Neutra
+48. Hellbound → Negativa
+49. Hello → Negativa
+50. Her Song → Negativa
+51. I'm Shady → Negativa
+52. Insane → Negativa
+53. It's Murda → Negativa
+54. It's Ok → Positiva
+55. Jimmy Crack Corn → Neutra
+56. Keep Talkin → Neutra
+57. Ken Kaniff → Neutra
+58. Kim → Negativa
+59. Lose Yourself → Neutra
+60. Loser → Negativa
+61. Love Me → Positiva
+62. Love The Way You Lie → Negativa
+63. Maxine → Negativa
+64. Monkey See, Monkey Do → Negativa
+65. Mr. Mathers → Neutra
+66. Murder Murder → Negativa
+67. Music Box → Neutra
+68. Must Be The Ganja → Neutra
+69. My Dad's Gone Crazy → Negativa
+70. My Fault → Negativa
+
+💡 ANÁLISE:
+   As músicas do Eminem frequentemente exploram temas complexos
+   como struggles pessoais, crítica social e auto-reflexão.
+   Esta análise por palavras-chave captura tendências gerais.
+
+📅 Data: 06/10/2025 17:47

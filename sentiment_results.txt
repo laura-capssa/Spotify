@@ -1,0 +1,20 @@
+============================================================
+       RESULTADOS - CLASSIFICAÇÃO DE SENTIMENTOS
+============================================================
+
+🎯 MÉTODO: Análise por palavras-chave
+💡 OBS: Modelo Llama2 requer 6GB RAM (disponível: 4.2GB)
+
+📊 DISTRIBUIÇÃO DE SENTIMENTOS:
+----------------------------------------
+🎵 Positiva: 11 músicas ( 55.0%)
+🎵 Neutra:  3 músicas ( 15.0%)
+🎵 Negativa:  6 músicas ( 30.0%)
+
+📈 ESTATÍSTICAS:
+   • Músicas analisadas: 20
+   • Método: Análise léxica por palavras-chave
+   • Data: 06/10/2025 17:33
+
+💡 ANÁLISE:
+   → As letras tendem a ser MAIS POSITIVAS
